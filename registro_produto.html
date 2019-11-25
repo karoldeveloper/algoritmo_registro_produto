@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>registro_produto.html</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="generator" content="SynEdit HTML exporter" />
+<style type="text/css">
+<!--
+body { color: #000000; background-color: #293134; }
+.cpp1-assembler { color: #93C763; }
+.cpp1-character { color: #FF8409; }
+.cpp1-comment { color: #66747B; font-style: italic; }
+.cpp1-float { color: #FFCD22; }
+.cpp1-hexadecimal { color: #FFCD22; }
+.cpp1-identifier { color: #E0E2E4; }
+.cpp1-illegalchar { color: #FB0000; }
+.cpp1-number { color: #FFCD22; }
+.cpp1-octal { color: #FFCD22; }
+.cpp1-preprocessor { color: #A082BD; }
+.cpp1-reservedword { color: #678CB1; }
+.cpp1-space { background-color: #293134; }
+.cpp1-string { color: #EC7600; }
+.cpp1-symbol { color: #E8E2B7; }
+-->
+</style>
+</head>
+<body>
+<pre>
+<code><span style="font: 11pt Consolas;"><span class="cpp1-space">    </span><span class="cpp1-preprocessor">#include &lt;stdio.h&gt;
+</span><span class="cpp1-space">    </span><span class="cpp1-preprocessor">#include &lt;conio.h&gt;
+</span><span class="cpp1-space">    </span><span class="cpp1-reservedword">int</span><span class="cpp1-space"> </span><span class="cpp1-identifier">main</span><span class="cpp1-symbol">(</span><span class="cpp1-reservedword">void</span><span class="cpp1-symbol">)
+</span><span class="cpp1-space">    </span><span class="cpp1-symbol">{
+</span><span class="cpp1-space">      	</span><span class="cpp1-comment">/*Criando a struct */
+</span><span class="cpp1-space">	    </span><span class="cpp1-reservedword">struct</span><span class="cpp1-space"> </span><span class="cpp1-identifier">registro_produto
+</span><span class="cpp1-space">	    </span><span class="cpp1-symbol">{
+</span><span class="cpp1-space">	    </span><span class="cpp1-reservedword">char</span><span class="cpp1-space"> </span><span class="cpp1-identifier">nome</span><span class="cpp1-symbol">[</span><span class="cpp1-number">50</span><span class="cpp1-symbol">];
+</span><span class="cpp1-space">	    </span><span class="cpp1-reservedword">char</span><span class="cpp1-space"> </span><span class="cpp1-identifier">tipo</span><span class="cpp1-symbol">[</span><span class="cpp1-number">30</span><span class="cpp1-symbol">];
+</span><span class="cpp1-space">	    </span><span class="cpp1-reservedword">char</span><span class="cpp1-space"> </span><span class="cpp1-identifier">fornecedor</span><span class="cpp1-symbol">[</span><span class="cpp1-number">50</span><span class="cpp1-symbol">];
+</span><span class="cpp1-space">	    </span><span class="cpp1-reservedword">float</span><span class="cpp1-space"> </span><span class="cpp1-identifier">quantidade_estoque</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	    </span><span class="cpp1-reservedword">float</span><span class="cpp1-space"> </span><span class="cpp1-identifier">quantidade_loja</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	    </span><span class="cpp1-symbol">};
+</span><span class="cpp1-space">	      
+	    </span><span class="cpp1-comment">/*Criando a vari&aacute;vel produto que ser&aacute; do tipo struct registro_produto */
+</span><span class="cpp1-space">	    </span><span class="cpp1-reservedword">struct</span><span class="cpp1-space"> </span><span class="cpp1-identifier">registro_produto</span><span class="cpp1-space"> </span><span class="cpp1-identifier">produto</span><span class="cpp1-symbol">;
+</span><span class="cpp1-space">	      
+	    </span><span class="cpp1-identifier">printf</span><span class="cpp1-symbol">(</span><span class="cpp1-string">&quot;\n---------- Registro do PRODUTO - MERCADO -----------\n\n\n&quot;</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">      
+		</span><span class="cpp1-comment">//      
+</span><span class="cpp1-space">      	</span><span class="cpp1-identifier">printf</span><span class="cpp1-symbol">(</span><span class="cpp1-string">&quot;Nome do produto ......: &quot;</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">      	</span><span class="cpp1-identifier">fflush</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">stdin</span><span class="cpp1-symbol">);</span><span class="cpp1-space">	        
+	    </span><span class="cpp1-identifier">fgets</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">produto</span><span class="cpp1-symbol">.</span><span class="cpp1-identifier">nome</span><span class="cpp1-symbol">,</span><span class="cpp1-space"> </span><span class="cpp1-number">50</span><span class="cpp1-symbol">,</span><span class="cpp1-space"> </span><span class="cpp1-identifier">stdin</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">	      
+	    </span><span class="cpp1-identifier">printf</span><span class="cpp1-symbol">(</span><span class="cpp1-string">&quot;tipo ......: &quot;</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">	    </span><span class="cpp1-identifier">fflush</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">stdin</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">	    </span><span class="cpp1-identifier">fgets</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">produto</span><span class="cpp1-symbol">.</span><span class="cpp1-identifier">tipo</span><span class="cpp1-symbol">,</span><span class="cpp1-space"> </span><span class="cpp1-number">30</span><span class="cpp1-symbol">,</span><span class="cpp1-space"> </span><span class="cpp1-identifier">stdin</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">	    
+	    </span><span class="cpp1-identifier">printf</span><span class="cpp1-symbol">(</span><span class="cpp1-string">&quot;fornecedor ......: &quot;</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">	    </span><span class="cpp1-identifier">fflush</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">stdin</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">	    </span><span class="cpp1-identifier">fgets</span><span class="cpp1-symbol">(</span><span class="cpp1-identifier">produto</span><span class="cpp1-symbol">.</span><span class="cpp1-identifier">fornecedor</span><span class="cpp1-symbol">,</span><span class="cpp1-space"> </span><span class="cpp1-number">50</span><span class="cpp1-symbol">,</span><span class="cpp1-space"> </span><span class="cpp1-identifier">stdin</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">	      
+	    </span><span class="cpp1-identifier">printf</span><span class="cpp1-symbol">(</span><span class="cpp1-string">&quot;Informe quantos tem no estoque ..: &quot;</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">	    </span><span class="cpp1-identifier">scanf</span><span class="cpp1-symbol">(</span><span class="cpp1-string">&quot;%f&quot;</span><span class="cpp1-symbol">,</span><span class="cpp1-space"> </span><span class="cpp1-symbol">&amp;</span><span class="cpp1-identifier">produto</span><span class="cpp1-symbol">.</span><span class="cpp1-identifier">quantidade_estoque</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">	      
+	    </span><span class="cpp1-identifier">printf</span><span class="cpp1-symbol">(</span><span class="cpp1-string">&quot;Informe quantos tem na loja ..: &quot;</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">	    </span><span class="cpp1-identifier">scanf</span><span class="cpp1-symbol">(</span><span class="cpp1-string">&quot;%f&quot;</span><span class="cpp1-symbol">,</span><span class="cpp1-space"> </span><span class="cpp1-symbol">&amp;</span><span class="cpp1-identifier">produto</span><span class="cpp1-symbol">.</span><span class="cpp1-identifier">quantidade_loja</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">	      
+	    </span><span class="cpp1-identifier">printf</span><span class="cpp1-symbol">(</span><span class="cpp1-string">&quot;\n\n --------- Lendo os dados da registro ---------\n\n&quot;</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">	    </span><span class="cpp1-identifier">printf</span><span class="cpp1-symbol">(</span><span class="cpp1-string">&quot;Nome ...........: %s&quot;</span><span class="cpp1-symbol">,</span><span class="cpp1-space"> </span><span class="cpp1-identifier">produto</span><span class="cpp1-symbol">.</span><span class="cpp1-identifier">nome</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">	    </span><span class="cpp1-identifier">printf</span><span class="cpp1-symbol">(</span><span class="cpp1-string">&quot;Tipo .....: %s&quot;</span><span class="cpp1-symbol">,</span><span class="cpp1-space"> </span><span class="cpp1-identifier">produto</span><span class="cpp1-symbol">.</span><span class="cpp1-identifier">tipo</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">	    </span><span class="cpp1-identifier">printf</span><span class="cpp1-symbol">(</span><span class="cpp1-string">&quot;Fornecedor .....: %s&quot;</span><span class="cpp1-symbol">,</span><span class="cpp1-space"> </span><span class="cpp1-identifier">produto</span><span class="cpp1-symbol">.</span><span class="cpp1-identifier">tipo</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">	    </span><span class="cpp1-identifier">printf</span><span class="cpp1-symbol">(</span><span class="cpp1-string">&quot;Quantidade no estoque ...: %.2f\n&quot;</span><span class="cpp1-space"> </span><span class="cpp1-symbol">,</span><span class="cpp1-space"> </span><span class="cpp1-identifier">produto</span><span class="cpp1-symbol">.</span><span class="cpp1-identifier">quantidade_estoque</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">	    </span><span class="cpp1-identifier">printf</span><span class="cpp1-symbol">(</span><span class="cpp1-string">&quot;Quantidade na loja ...: %.2f\n&quot;</span><span class="cpp1-space"> </span><span class="cpp1-symbol">,</span><span class="cpp1-space"> </span><span class="cpp1-identifier">produto</span><span class="cpp1-symbol">.</span><span class="cpp1-identifier">quantidade_loja</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">	      
+	    </span><span class="cpp1-identifier">getch</span><span class="cpp1-symbol">();
+</span><span class="cpp1-space">      	</span><span class="cpp1-reservedword">return</span><span class="cpp1-symbol">(</span><span class="cpp1-number">0</span><span class="cpp1-symbol">);
+</span><span class="cpp1-space">    </span><span class="cpp1-symbol">}
+</span></span>
+</code></pre>
+</body>
+</html>
